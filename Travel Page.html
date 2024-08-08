@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Home Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #main {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        #logo img {
+            float: left;
+            width: 150px;
+            margin-top: 5px;
+        }
+
+        #logo {
+            width: 150px;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(217, 234, 248, 0.205), rgba(231, 239, 243, 0.247)), url("TRAVEL\ BG.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        ul {
+            float: right;
+            margin-top: 25px;
+            list-style-type: none;
+        }
+
+        ul li a {
+            padding: 5px 20px;
+            border: px solid neon;
+            text-decoration: none;
+            box-shadow: 6px 6px 5px #143fff;
+
+        }
+
+        ul li a:hover {
+            background-color: lightskyblue;
+            color: black;
+        }
+
+        #Title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.233);
+        }
+
+        div h1 {
+            font-size: 40px;
+            color: rgba(9, 6, 184, 0.959);
+        }
+
+        #button {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        #btn1 {
+            color: black;
+            border: 1px solid black;
+            padding: 10px 30px;
+            text-decoration: none;
+        }
+
+        #btn2 {
+            color: black;
+            border: 1px solid black;
+            padding: 10px 30px;
+            text-decoration: none;
+        }
+
+        #btn:hover {
+            background-color: lightblue;
+            color: black;
+        }
+
+        @media (max-width:640px) {
+            #logo img {
+                float: none;
+
+            }
+
+            #logo {
+                margin: auto;
+            }
+
+            ul {
+                float: none;
+                margin: auto;
+                width: 200px;   
+            }
+
+            #gallery {
+                position: fixed;
+            }
+
+            li {
+                display: block;
+                margin: 20px;
+            }
+
+            #btn2 {
+                float: none;
+                margin: auto;
+            }
+
+            #main {
+                width: 100%;
+            }
+
+           #button{
+            position: fixed;
+            
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="main">
+            <div id="logo">
+                <img src="Travel logo.jpg" alt="Travel background">
+            </div>
+            <ul>
+                <li id="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Tours</a></li>
+                <li id="gallery"><a href="#">Gallery</a></li>
+            </ul>
+            <div id="Title">
+                <h1>CG TRAVEL AGENCIES</h1>
+            </div>
+            <div id="button">
+                <a href="#" id="btn1">Watch Videos</a>
+                <a href="#" id="btn2">Recent Tours</a>
+
+            </div>
+
+
+
+    </header>
+</body>
+
+</html>
